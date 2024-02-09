@@ -1,0 +1,33 @@
+//Write a java programe to merge two list and remove all duplicate elements(Common Duplicate netween second list)
+// list a=[1,2,2,4,8}   list b={2,5,6,4,9}
+//o/p= {1,2,2,4,8,5,6,9}
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Duplicate {
+
+	public static void main(String[] args) {
+		List<Integer> ref=new ArrayList();
+	        ref.add(1);
+	        ref.add(2);
+	        ref.add(2);
+	        ref.add(4);
+	        ref.add(8);
+	       List<Integer> ref1=new ArrayList();   
+	           ref1.add(2);
+	           ref1.add(5);
+	           ref1.add(6);
+	           ref1.add(4);
+	           ref1.add(9);
+	           System.out.println(ref);
+	           System.out.println(ref1);
+	        ref1.removeAll(ref);
+	        System.out.println(ref1);
+	        ref.addAll(ref1);
+	        System.out.println(ref);
+	          
+		
+	}
+}
