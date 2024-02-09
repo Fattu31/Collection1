@@ -1,0 +1,42 @@
+//write a program in java to reverse a list and check if alternate value of list is alphabates or not
+// list a='@','A','7','9','B','E','D','F','1',',','-','$'.
+package practice;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Alphabates  {
+    public static void main(String[] args) throws Exception{
+    	LinkedList ref=new LinkedList();
+         ref.add('@');
+         ref.add('A');
+         ref.add('7');
+         ref.add('9');
+         ref.add('B');
+         ref.add('E');
+         ref.add('D');
+         ref.add('F');
+         ref.add('1');
+         ref.add(',');
+         ref.add('-');
+         ref.add('$');
+             Collections.reverse(ref);
+             System.out.println(ref);
+             for(int i=0;i<ref.size();i++)
+             {
+            char v= (char) ref.get(i);
+            int a=v;
+        
+      if(( a>= 65 && a <=90)||(a>=97&& a<=122))
+        {
+      	System.out.println("it is Alphbates: "+v);
+        }
+        else {
+        	System.out.println("it is not Alphbates: "+v);
+     }
+         
+	}
+}
+}
